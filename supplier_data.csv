@@ -1,0 +1,7 @@
+supplier,hotel_name,description,room_type,price,cancellation,available
+Supplier A,Taj Krishna Hyderabad,Luxury hotel in Banjara Hills,Deluxe Room,8000,Free cancellation,true
+Supplier B,Taj Krishna Hotel,Premium hotel in Banjara Hills,Deluxe Room,7500,Non refundable,true
+Supplier C,Krishna Taj Hyderabad,Luxury accommodation in Hyderabad,Deluxe Room,8200,Free cancellation,true
+Supplier A,Novotel Hyderabad,Modern hotel near HITEC City,Standard Room,6500,Free cancellation,true
+Supplier B,Novotel Hitech City,Modern accommodation near HITEC City,Standard Room,6200,Non refundable,true
+Supplier C,Hotel Green Park,Business hotel in Hyderabad,Executive Room,7000,Free cancellation,true
