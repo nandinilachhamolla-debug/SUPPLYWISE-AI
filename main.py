@@ -5,12 +5,12 @@ import pandas as pd
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.services.matching import match_hotels
-from app.services.optimization import optimize_offers
+from matching import match_hotels
+from optimization import optimize_offers
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_FILE = BASE_DIR / "data" / "supplier_data.csv"
+BASE_DIR = Path(__file__).resolve().parent
+DATA_FILE = BASE_DIR / "supplier_data.csv"
 
 app = FastAPI(
     title="SUPPLYWISE AI API",
