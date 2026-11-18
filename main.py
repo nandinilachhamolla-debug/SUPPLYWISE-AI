@@ -1,3 +1,4 @@
+
 from pathlib import Path
 
 import pandas as pd
@@ -12,6 +13,7 @@ from optimization import optimize_offers
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "supplier_data.csv"
 
+
 app = FastAPI(
     title="SUPPLYWISE AI API",
     description=(
@@ -21,11 +23,14 @@ app = FastAPI(
     version="1.0.0",
 )
 
+
+# CORS configuration: allow local frontend and deployed Netlify frontend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+        "https://spectacular-concha-fec8de.netlify.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
